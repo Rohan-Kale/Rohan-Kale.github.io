@@ -1,0 +1,25 @@
+{
+  "name": "orbital-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content": "node scripts/generate.mjs",
+    "predev": "npm run content",
+    "dev": "vite --host 127.0.0.1",
+    "prebuild": "npm run content",
+    "build": "vite build --base=./",
+    "preview": "vite preview --host 127.0.0.1",
+    "build:rust": "node scripts/build-rust.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/space-grotesk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.1",
+    "vite": "^7.1.7"
+  }
+}

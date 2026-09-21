@@ -1,0 +1,217 @@
+{
+  "name": "Rohan",
+  "role": "Computer science student at Penn State",
+  "resume": "/files/Rohan_Resume.pdf",
+  "intro": "I build backend systems, privacy tools, and graphics software.",
+  "about": {
+    "heading": "About me",
+    "paragraphs": [
+      "i'm a computer science undergrad at penn state building backend systems, privacy tools, and graphics software.",
+      "i like practical systems work: figuring out how things run, making them faster, and making complex software easier to use. lately, i've been exploring event-driven services, privacy for ai applications, and real-time simulation in rust.",
+      "outside of code, i like bouldering, hiking, pickleball, chess, video games, basketball, football, and reading. feel free to reach out about anything, and have fun exploring the page."
+    ]
+  },
+  "projects": [
+    {
+      "id": "privateai-gateway",
+      "title": "PrivateAI Gateway",
+      "category": "PRIVACY / BACKEND",
+      "description": "An LLM gateway that detects and redacts personal information and credentials before prompts reach external model providers. Configurable policies can allow, redact, tokenize, or block sensitive data, with support for concurrent requests and streaming responses.",
+      "details": "Built in Go with reversible tokenization to restore authorized values in model responses.",
+      "technologies": [
+        "Go",
+        "Python",
+        "Docker"
+      ],
+      "source": null,
+      "demo": null,
+      "image": null,
+      "imageAlt": "",
+      "note": "",
+      "status": "currently working on",
+      "codePending": true
+    },
+    {
+      "id": "personal-website",
+      "title": "Personal Website",
+      "description": "This portfolio, with a minimal reading view and an interactive 3D solar system. Fly between sections or explore a browser adaptation of my Rust Space Simulator, with adjustable bodies, gravity, and simulation speed.",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "Rust",
+        "WebAssembly",
+        "WebGPU"
+      ],
+      "source": null,
+      "demo": null,
+      "image": null,
+      "imageAlt": ""
+    },
+    {
+      "id": "space-simulator",
+      "title": "Kale Space Program",
+      "category": "GRAPHICS / PHYSICS",
+      "description": "A real-time 3D solar-system simulation written in Rust. Celestial bodies move under gravity, with GPU-accelerated rendering and a navigable camera.",
+      "details": "The source includes a Barnes–Hut octree, a WGSL gravity compute shader, a Sun and eight planets, and an asteroid belt initialized with 10,000 bodies. A desktop control panel exposes simulation speed and velocity-vector controls.",
+      "technologies": [
+        "Rust",
+        "wgpu",
+        "WGSL",
+        "winit",
+        "egui",
+        "glam"
+      ],
+      "source": "https://github.com/Rohan-Kale/space-simulator",
+      "demo": null,
+      "image": null,
+      "imageAlt": "",
+      "note": "The 3D browser playground uses the original rendering shaders and camera controls, a Rust WebAssembly octree, and adapted WebGPU gravity. The original desktop repository remains unchanged."
+    },
+    {
+      "id": "url-shortener",
+      "title": "URL Shortener",
+      "description": "A URL shortening service with click tracking and an analytics dashboard. A FastAPI backend stores links in PostgreSQL and caches frequently used redirects in Redis, with a React frontend for viewing link activity.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+        "React",
+        "Docker"
+      ],
+      "source": "https://github.com/Rohan-Kale/url-shortener",
+      "demo": null,
+      "image": null,
+      "imageAlt": ""
+    },
+    {
+      "id": "applynow",
+      "title": "ApplyNow",
+      "description": "A Python tool for automating LinkedIn job applications. Uses Selenium for browser interactions, BeautifulSoup for parsing pages, and pandas for working with application data.",
+      "technologies": [
+        "Python",
+        "Selenium",
+        "BeautifulSoup",
+        "pandas"
+      ],
+      "source": "https://github.com/Rohan-Kale/ApplyNOW",
+      "demo": null,
+      "image": null,
+      "imageAlt": ""
+    }
+  ],
+  "skills": [
+    {
+      "title": "languages",
+      "items": [
+        "Python",
+        "Java",
+        "C++",
+        "Go",
+        "Rust",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "infra",
+      "items": [
+        "Linux",
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "GCP"
+      ]
+    },
+    {
+      "title": "data",
+      "items": [
+        "SQL",
+        "PostgreSQL",
+        "SQLite",
+        "Redis",
+        "Kafka"
+      ]
+    },
+    {
+      "title": "platforms",
+      "items": [
+        "FastAPI",
+        "Flask",
+        "Node.js",
+        "React"
+      ]
+    },
+    {
+      "title": "graphics",
+      "items": [
+        "WGSL",
+        "wgpu",
+        "winit"
+      ]
+    },
+    {
+      "title": "apis",
+      "items": [
+        "REST APIs",
+        "Protocol Buffers"
+      ]
+    },
+    {
+      "title": "version control",
+      "items": [
+        "Git",
+        "GitHub",
+        "Bitbucket"
+      ]
+    },
+    {
+      "title": "ci + cd",
+      "items": [
+        "GitHub Actions",
+        "Jenkins",
+        "CI/CD"
+      ]
+    },
+    {
+      "title": "security",
+      "items": [
+        "Wireshark",
+        "hping3"
+      ]
+    },
+    {
+      "title": "ai tools",
+      "items": [
+        "Claude",
+        "Codex"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "period": "May 2026 – Aug 2026",
+      "role": "Software Engineer Intern",
+      "organization": "CrowdStrike",
+      "description": "Built a Kafka-based audit event system in Go across 2,400+ customer workflows. Extended event emission across 13 REST endpoints and five cloud regions, and fixed data races and nil-pointer failures in policy workflows."
+    },
+    {
+      "period": "Jun 2024 – Aug 2024",
+      "role": "Software Engineer Intern",
+      "organization": "Jetson.app",
+      "description": "Built a React and Node.js quiz system for a financial literacy platform serving 10,000+ users. Reduced Docker build time from 12 to 7 minutes and consolidated question retrieval from four database queries to one."
+    },
+    {
+      "period": "Jun 2023 – Aug 2023",
+      "role": "Cybersecurity Research Assistant",
+      "organization": "Horizon Academics",
+      "description": "Used Wireshark and controlled traffic simulations to study TCP/IP behavior and distributed-server resilience during denial-of-service attacks. Documented DDoS mitigation techniques and protocol-level defenses."
+    }
+  ],
+  "contact": {
+    "heading": "Contact",
+    "description": "You can reach me by email or connect with me on GitHub and LinkedIn.",
+    "email": "kalerohan42@gmail.com",
+    "github": "https://github.com/Rohan-Kale",
+    "linkedin": "https://linkedin.com/in/rohankale42"
+  }
+}
