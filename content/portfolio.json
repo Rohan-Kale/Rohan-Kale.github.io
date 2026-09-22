@@ -32,22 +32,6 @@
       "codePending": true
     },
     {
-      "id": "personal-website",
-      "title": "Personal Website",
-      "description": "This portfolio, with a minimal reading view and an interactive 3D solar system. Fly between sections or explore a browser adaptation of my Rust Space Simulator, with adjustable bodies, gravity, and simulation speed.",
-      "technologies": [
-        "JavaScript",
-        "CSS",
-        "Rust",
-        "WebAssembly",
-        "WebGPU"
-      ],
-      "source": null,
-      "demo": null,
-      "image": null,
-      "imageAlt": ""
-    },
-    {
       "id": "space-simulator",
       "title": "Kale Space Program",
       "category": "GRAPHICS / PHYSICS",
@@ -95,6 +79,22 @@
         "pandas"
       ],
       "source": "https://github.com/Rohan-Kale/ApplyNOW",
+      "demo": null,
+      "image": null,
+      "imageAlt": ""
+    },
+    {
+      "id": "personal-website",
+      "title": "Personal Website",
+      "description": "This portfolio, with a minimal reading view and an interactive 3D solar system. Fly between sections or explore a browser adaptation of my Rust Space Simulator, with adjustable bodies, gravity, and simulation speed.",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "Rust",
+        "WebAssembly",
+        "WebGPU"
+      ],
+      "source": null,
       "demo": null,
       "image": null,
       "imageAlt": ""
