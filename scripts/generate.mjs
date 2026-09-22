@@ -39,7 +39,7 @@ const replacements = {
   SKILLS: data.skills.map((s) => `<div class="skill-group"><span class="skill-label">${esc(s.title)}</span><span class="skill-items">${s.items.map(esc).join(', ')}</span></div>`).join(''),
   EXPERIENCE: data.experience.map((e) => `<article class="experience-item"><h3>${esc(e.role)}</h3><p class="organization"><span>${esc(e.organization)}</span><span class="period">${esc(e.period)}</span></p><p>${esc(e.description)}</p></article>`).join(''),
   CONTACT_HEADING: esc(data.contact.heading), CONTACT_DESCRIPTION: esc(data.contact.description),
-  CONTACT_LINKS: `${data.contact.email ? (() => { if (!/^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(data.contact.email)) throw new Error('Invalid email'); return `<a class="button primary" href="mailto:${esc(data.contact.email)}">${esc(data.contact.email)}</a>`; })() : '<p class="contact-placeholder">[Add your email address]</p>'}<div class="project-links">${external(data.contact.github, 'GitHub')}${external(data.contact.linkedin, 'LinkedIn')}</div>`
+  CONTACT_LINKS: `<div class="contact-links">${data.contact.email ? (() => { if (!/^[^\s@<>"']+@[^\s@<>"']+\.[^\s@<>"']+$/.test(data.contact.email)) throw new Error('Invalid email'); return `<a class="text-link" href="mailto:${esc(data.contact.email)}">${esc(data.contact.email)}</a>`; })() : '<p class="contact-placeholder">[Add your email address]</p>'}${external(data.contact.github, 'GitHub')}${external(data.contact.linkedin, 'LinkedIn')}</div>`
 };
 await writeFile(path.join(root, 'index.html'), template.replace(/\{\{([A-Z_]+)\}\}/g, (_, key) => {
   if (!(key in replacements)) throw new Error(`Unknown content field ${key}`);
