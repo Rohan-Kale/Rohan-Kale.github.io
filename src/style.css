@@ -50,6 +50,7 @@ body.enhanced{height:100dvh;display:flex;flex-direction:column;overflow:hidden}b
 .identity-links{flex-direction:column;align-items:flex-start;gap:9px;margin-top:8px}
 .identity h1{margin-bottom:0}
 .social-icons{display:flex;align-items:center;gap:14px}
+.profile-links{display:flex;align-items:center;gap:14px}
 .social-icon{display:inline-flex;align-items:center;justify-content:center;min-width:28px;min-height:28px;color:#aebbd0;text-decoration:none}
 .social-icon:hover{color:#fff}
 .social-icon svg{display:block}
