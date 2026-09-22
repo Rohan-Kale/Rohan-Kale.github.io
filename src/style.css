@@ -54,4 +54,6 @@ body.enhanced{height:100dvh;display:flex;flex-direction:column;overflow:hidden}b
 .social-icon:hover{color:#fff}
 .social-icon svg{display:block}
 .project-status{font-family:'DM Sans Variable',sans-serif;font-size:12px;font-weight:400;letter-spacing:0;color:var(--muted)}
+/* Navigation focuses the content for assistive technology without framing the panel. */
+.content-section[tabindex="-1"]:focus{outline:none}
 @media(max-width:760px){.identity-links{gap:9px}.social-icons{gap:12px}.combined-skills .skill-group{font-size:12px}}
