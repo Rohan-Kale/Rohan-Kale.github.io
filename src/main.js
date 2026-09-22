@@ -22,7 +22,7 @@ function showSection(id, { push = true, focus = true, overview = false, preserve
   if (id !== active && document.getElementById(id)?.classList.contains('project')) document.getElementById(id).scrollIntoView({ block: 'nearest' });
   scene?.focus(mapOnly || mode === 'plain' ? null : active, media.matches, preserveCamera);
   if (focus && !mapOnly) document.getElementById(active).focus({ preventScroll: true });
-  status.textContent = mapOnly ? 'Space portfolio. Select a body or switch to Plain.' : `${active === 'about' ? 'About' : active} section opened.`;
+  status.textContent = mapOnly ? 'Space portfolio. Select a body or use Back to portfolio.' : `${active === 'about' ? 'About' : active} section opened.`;
 }
 async function setMode(next, { persist = true } = {}) {
   mode = next;
@@ -30,6 +30,7 @@ async function setMode(next, { persist = true } = {}) {
   if (persist) storage.set(mode);
   document.body.classList.toggle('space-mode', mode === 'space');
   $('#plain-mode').setAttribute('aria-pressed', String(mode === 'plain'));
+  $('#plain-mode').textContent = mode === 'space' ? 'Back to portfolio' : 'Portfolio';
   $('#space-mode').setAttribute('aria-pressed', String(mode === 'space'));
   $('#scene').hidden = mode !== 'space';
   $('#map-labels').hidden = mode !== 'space';
@@ -98,7 +99,9 @@ function route() {
   }
 }
 $('#plain-mode').addEventListener('click', () => setMode('plain'));
-$('#space-mode').addEventListener('click', () => { history.replaceState(null, '', '#home'); setMode('space'); });
+function exploreSpace() { history.replaceState(null, '', '#home'); setMode('space'); }
+$('#space-mode').addEventListener('click', exploreSpace);
+$('#explore-space').addEventListener('click', exploreSpace);
 $('#close-section').addEventListener('click', () => { showSection('home', { overview: true, focus: false }); scene?.focusControls(); });
 $('#reset-camera').addEventListener('click', () => { scene?.resetView?.(); showSection('home', { overview: true, focus: false }); });
 function updateMotion() { $('#pause-motion').setAttribute('aria-pressed', String(motionPaused)); $('#pause-motion').textContent = motionPaused ? 'Resume motion' : 'Pause motion'; scene?.setPaused(motionPaused); }
@@ -118,6 +121,7 @@ document.addEventListener('click', (event) => {
 });
 document.body.classList.add('enhanced');
 $('.mode-switch').hidden = false;
+$('#explore-space').hidden = false;
 active = resolve(location.hash.slice(1));
 updateMotion();
 setMode(storage.get() === 'space' && !navigator.connection?.saveData ? 'space' : 'plain', { persist: false }).then(route);

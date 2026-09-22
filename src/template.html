@@ -11,8 +11,8 @@
   <a class="skip-link" href="#about">Skip to content</a>
   <header class="site-header">
     <div class="mode-switch" role="group" aria-label="Portfolio mode" hidden>
-      <button id="plain-mode" type="button" aria-pressed="true">Plain</button>
-      <button id="space-mode" type="button" aria-pressed="false">Space</button>
+      <button id="plain-mode" type="button" aria-pressed="true">Portfolio</button>
+      <button id="space-mode" type="button" aria-pressed="false">Explore in 3D</button>
     </div>
   </header>
   <main class="workspace" id="home">
@@ -26,7 +26,7 @@
     </nav>
     <aside class="identity">
       <div><h1>hi, i&#39;m {{NAME_LOWER}}</h1></div>
-      <div class="identity-links">{{SOCIAL_ICONS}}{{RESUME}}</div>
+      <div class="identity-links">{{SOCIAL_ICONS}}{{RESUME}}<button id="explore-space" class="explore-space" type="button" hidden><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="11" ry="5" transform="rotate(-35 12 12)"/></svg>Explore in 3D</button></div>
     </aside>
     <div class="portfolio" id="portfolio">
       <div class="content-toolbar"><nav class="section-nav" aria-label="Portfolio sections"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav><button id="close-section" aria-label="Back to solar system" type="button" hidden>×</button></div>
