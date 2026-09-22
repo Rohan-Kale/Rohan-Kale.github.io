@@ -192,19 +192,19 @@
       "period": "May 2026 – Aug 2026",
       "role": "Software Engineer Intern",
       "organization": "CrowdStrike",
-      "description": "built an audit event system for the firewall on the endpoint security team."
+      "description": "worked on the endpoint security team, building an audit event system in go and kafka to record changes to firewall policies. i connected policy workflows to the event pipeline across api endpoints and cloud regions, and fixed concurrency bugs that affected reliability."
     },
     {
       "period": "Jun 2024 – Aug 2024",
       "role": "Software Engineer Intern",
       "organization": "Jetson.app",
-      "description": "built a quiz feature for a financial literacy platform and improved its backend and deployment workflow."
+      "description": "built a quiz system for a financial literacy platform, working across the react frontend and node.js backend. i also streamlined how the app retrieved questions from the database and sped up docker builds to make development and deployment smoother."
     },
     {
       "period": "Jun 2023 – Aug 2023",
       "role": "Cybersecurity Research Assistant",
       "organization": "Horizon Academics",
-      "description": "studied how distributed systems respond to denial-of-service attacks and explored ways to make them more resilient."
+      "description": "researched how distributed servers respond to denial-of-service attacks using controlled traffic simulations and wireshark. i analyzed network traffic to understand tcp/ip behavior under attack and documented mitigation techniques and protocol-level defenses."
     }
   ],
   "contact": {
