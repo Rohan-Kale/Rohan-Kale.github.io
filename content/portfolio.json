@@ -13,25 +13,6 @@
   },
   "projects": [
     {
-      "id": "privateai-gateway",
-      "title": "PrivateAI Gateway",
-      "category": "PRIVACY / BACKEND",
-      "description": "An LLM gateway that detects and redacts personal information and credentials before prompts reach external model providers. Configurable policies can allow, redact, tokenize, or block sensitive data, with support for concurrent requests and streaming responses.",
-      "details": "Built in Go with reversible tokenization to restore authorized values in model responses.",
-      "technologies": [
-        "Go",
-        "Python",
-        "Docker"
-      ],
-      "source": null,
-      "demo": null,
-      "image": null,
-      "imageAlt": "",
-      "note": "",
-      "status": "currently working on",
-      "codePending": true
-    },
-    {
       "id": "space-simulator",
       "title": "Kale Space Program",
       "category": "GRAPHICS / PHYSICS",
