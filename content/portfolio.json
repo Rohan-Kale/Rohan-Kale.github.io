@@ -135,12 +135,7 @@
         "Node.js",
         "React",
         "REST APIs",
-        "Protocol Buffers"
-      ]
-    },
-    {
-      "title": "graphics",
-      "items": [
+        "Protocol Buffers",
         "WGSL",
         "wgpu",
         "winit"
