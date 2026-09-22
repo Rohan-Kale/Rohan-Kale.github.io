@@ -109,23 +109,18 @@
         "C++",
         "Go",
         "Rust",
-        "JavaScript"
+        "JavaScript",
+        "SQL"
       ]
     },
     {
-      "title": "infra",
+      "title": "infra + data",
       "items": [
         "Linux",
         "Docker",
         "Kubernetes",
         "AWS",
-        "GCP"
-      ]
-    },
-    {
-      "title": "data",
-      "items": [
-        "SQL",
+        "GCP",
         "PostgreSQL",
         "SQLite",
         "Redis",
@@ -133,12 +128,14 @@
       ]
     },
     {
-      "title": "platforms",
+      "title": "web + apis",
       "items": [
         "FastAPI",
         "Flask",
         "Node.js",
-        "React"
+        "React",
+        "REST APIs",
+        "Protocol Buffers"
       ]
     },
     {
@@ -150,38 +147,16 @@
       ]
     },
     {
-      "title": "apis",
-      "items": [
-        "REST APIs",
-        "Protocol Buffers"
-      ]
-    },
-    {
-      "title": "version control",
+      "title": "tools",
       "items": [
         "Git",
         "GitHub",
-        "Bitbucket"
-      ]
-    },
-    {
-      "title": "ci + cd",
-      "items": [
+        "Bitbucket",
         "GitHub Actions",
         "Jenkins",
-        "CI/CD"
-      ]
-    },
-    {
-      "title": "security",
-      "items": [
+        "CI/CD",
         "Wireshark",
-        "hping3"
-      ]
-    },
-    {
-      "title": "ai tools",
-      "items": [
+        "hping3",
         "Claude",
         "Codex"
       ]
