@@ -13,6 +13,25 @@
   },
   "projects": [
     {
+      "id": "privateai-gateway",
+      "title": "PrivateAI Gateway",
+      "category": "PRIVACY / BACKEND",
+      "description": "A privacy gateway for text-based LLM requests. Uses Go and Python to detect sensitive data, apply tenant-specific policies, and replace private values with reversible tokens. Redis-backed workers handle queued inference, while PostgreSQL stores policies and model responses are inspected before being returned.",
+      "details": "Supports allow, redact, tokenize, and block policies, request-scoped token restoration, and buffered output inspection. The default local demo uses a mock model provider.",
+      "technologies": [
+        "Go",
+        "Python",
+        "PostgreSQL",
+        "Redis",
+        "Docker"
+      ],
+      "source": "https://github.com/Rohan-Kale/PrivateAI-Gateway",
+      "demo": null,
+      "image": null,
+      "imageAlt": "",
+      "note": ""
+    },
+    {
       "id": "space-simulator",
       "title": "Kale Space Program",
       "category": "GRAPHICS / PHYSICS",
